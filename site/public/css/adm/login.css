@@ -1,0 +1,95 @@
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s !important;
+}
+body .waves{
+    fill: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.form-login{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+
+}
+.form-login .group-header{
+    margin-bottom: 35px;
+    text-align: center;
+}
+.form-login .group-header img{
+    width: 80px;
+    height: max-content;
+    margin-bottom: 25px;
+}
+.form-login .group-header h1{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.form-login .form-group{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.form-login .form-group input[type=text],
+.form-login .form-group input[type=password],
+.form-login .form-group input[type=email]{
+    border-radius: 5px;
+    border: 1px solid rgb(196, 196, 196);
+    padding: 8px;
+    width: 20rem;
+}
+.form-login .form-group .form-text {
+    margin-top: 0.25rem;
+    font-size: .875em;
+    color: #6c757d;
+}
+.form-login .group-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-login .group-footer .btn-lg{
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    background-color: rgb(32, 101, 228);
+}
+.form-login .group-footer p a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.message{
+    transition: .8s ease-in-out;
+    z-index: 99999;
+    border-radius: 5px;
+    border: 3px solid #37b452;
+    color: white;
+    position: fixed;
+    top: 30px;
+    margin: 0 auto;
+    justify-content: center;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    align-items: center;
+    background-color: #4BD068;
+    padding: 18px 20px;
+}
+.message p{
+    margin-bottom: 0;
+}
+.message.message-delete{
+    border: 3px solid #c53434;
+    background-color: #D73D3D;
+}

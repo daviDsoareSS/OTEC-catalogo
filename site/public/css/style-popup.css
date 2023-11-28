@@ -1,0 +1,269 @@
+:root{
+    --cor-textos-popup: #bc9c61;
+    --font-modal-exit: Arial, Helvetica, sans-serif;
+}
+#popup {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    background-color: var(--douradoNavbar);
+    bottom: 0px;
+    z-index: 9999;
+}
+
+#popup .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0 !important;
+}
+
+#popup .wrapper .text span {
+    color: var(--white);
+    font-size: 18px;
+}
+
+#popup .wrapper ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#popup .wrapper ul li {
+    color: var(--white);
+}
+
+#popup .wrapper .btn {
+    background-color: white !important;
+    margin-left: 20px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange);
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#popup .wrapper .btn a {
+    color: white !important;
+    font-weight: bold;
+}
+
+.check-privacy {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.check-privacy #privacy {
+    height: auto;
+    width: fit-content;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+.pop-up-cookie {
+    position: fixed;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+    z-index: 9999;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+.pop-up-cookie .content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    /* margin-bottom: 15px; */
+}
+
+.pop-up-cookie .content-wrapper p {
+    margin-bottom: 0 !important;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.pop-up-cookie .content-wrapper p a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 14px;
+}
+
+.pop-up-cookie .content-wrapper .btn-privacy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    width: 100%;
+    height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--cor-textos-popup);
+    background-color: white;
+    margin: 15px 0;
+    border-radius: 7px;
+}
+div#modal-exit{
+    display: none;
+}
+div.all-modal{
+    position: absolute;
+    /* font-family: var(--font-modal-exit); */
+    z-index: 9000;
+}
+div.all-modal > .underlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+div.all-modal > .modal{
+    position: relative;
+    width: auto !important;
+    max-width: 800px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /* background-color: white; */
+    background: none;
+    height: auto;
+    overflow: visible;
+    
+}
+div.all-modal > .modal > .icon-close-popup {
+    width: auto;
+    background-color: var(--douradoNavbar);
+    padding: 10px 13px;
+    position: absolute;
+    top: 10px;
+    left: 100%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 2;
+    color: white;
+    font-size: 20px;
+    /* filter: invert(1); */
+}
+/* div.all-modal > .modal > .modal-content, div.all-modal > .modal > div.logo-pop-up{
+    width: 50%;
+} */
+div.all-modal > .modal > .modal-content{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border:2px solid var(--douradoNavbar) !important;
+    height: 100%;
+    padding: 40px 40px;
+    border: none;
+    border-radius: 0;
+}
+div.all-modal > .modal > .modal-content form input[type="text"], div.all-modal > .modal > .modal-content > form > p, div.all-modal > .modal > .modal-content form > button, div.all-modal > .modal > .modal-content > form > .terms {
+    display: block;
+    width: 310px;
+    margin: auto;
+    border-radius: 0;
+    height: calc(1.5em + 0.75rem + 2px);
+}
+div.all-modal > .modal > .modal-content > form > .terms{
+    height: auto !important;
+}
+div.all-modal > .modal > .modal-content form{
+    margin: 0;
+    width: 100%;
+}
+div.all-modal > .modal > .modal-content > form > .terms a, div.all-modal > .modal > .modal-content > form > .terms strong{
+    color: var(--cor-textos-popup);
+    text-decoration: none;
+    font-weight: bold;
+}
+div.all-modal > .modal > .modal-content > form > .terms a{
+    text-decoration: underline;
+}
+div.all-modal > .modal > .modal-content form span{
+    display: block;
+    text-align: center;
+}
+div.all-modal > .modal > .modal-content > form > span{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cor-textos-popup);
+    margin-top: 25px;
+}
+div.all-modal > .modal > .modal-content > form > p{
+    color: var(--cor-textos-popup);
+    font-size: 16px;
+    margin-top: 12px;
+    text-align: center;
+}
+#modal-exit .modal-content button, div.all-modal > .modal > .modal-content > form > .terms{
+    margin-bottom: 26px;
+    display: flex;
+    align-items: start;
+}
+#modal-exit .modal-content button, div.all-modal > .modal > .modal-content > form > .terms > label{
+    padding-left: 11px;
+    font-size: 14px;
+    color: var(--cor-textos-popup);
+}
+#modal-exit .modal-content button{
+    border: none !important;
+    border-radius: 7px;
+    padding: 7px 40px;
+    background-color: var(--CorFonte) !important;
+    color: white !important;
+}
+#modal-exit .modal-content button, div.all-modal > .modal > .modal-content > form > .terms > label a{
+    color: var(--douradoNavbar);
+}
+div.all-modal > .modal > .modal-content form img{
+    display: block;
+    margin: auto;
+    max-height: 153px;
+    max-width: 220px;
+}
+div.all-modal > .modal > .modal-content form input[type="text"]{
+    margin: 30px auto;
+    outline: none;
+    outline: 1px solid var(--cor-textos-popup);
+    border: none;
+    background-color: white;
+    color: var(--CorFonte);
+    font-size: 16px;
+}
+div.all-modal > .modal > .modal-content form input[type="text"]::-webkit-input-placeholder {
+    color: rgb(185, 185, 185);
+ }
+div.all-modal > .modal > .modal-content form > button{
+    background-color: #2a2a2a;
+    border: none;
+    color: var(--cor-textos-popup);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 6px 10px;
+    margin-top: 46px;
+}
+div.all-modal > .modal > div.logo-pop-up > img{
+    display: block;
+    margin: auto;
+}

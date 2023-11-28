@@ -1,0 +1,93 @@
+section.product {
+    margin: 83px 0;
+}
+section.product .content{
+    gap: 100px;
+    justify-content: inherit;
+}
+section.product .image-product{
+    width: 600px;
+}
+section.product .image-product .img div{
+    width: auto;
+    height: 395px;
+    outline: 2px solid var(--azulOtec);
+}
+section.product .image-product .img div img{
+    object-fit: cover;
+    width: 600px;
+    height: 395px;
+}
+section.product .image-product .slider-nav{
+    display: flex;
+    gap: 30px;
+}
+.slick-prev,
+.slick-next {
+    background-color: transparent !important;
+}
+.slick-prev:before, .slick-next:before{
+    color: var(--azulOtec) !important;
+    font-weight: 600 !important;
+}
+section.product .image-product .slider-nav div {
+
+}
+section.product .image-product .slider-nav div img{
+    margin: 1.5rem;
+    width: 154px;
+    height: 100px;
+    outline: 2px solid #67737f;
+}
+section.product .info-product {
+    width: 517px;
+}
+section.product .info-product h3{
+    font-size: 37.77px;
+    border-left: 2px solid var(--azulOtec);
+    padding-left: 5px;
+    color: var(--azulOtec);
+    margin: 0;
+}
+section.product .info-product h4{
+    padding-left: 10px;
+    font-size: 28.57px;
+    color: #67737f;
+    margin-bottom: 40px;
+}
+section.product .info-product .text {
+    text-align: center;
+    margin-bottom: 23px;
+}
+section.product .info-product .text p{
+    font-size: 21.23px;
+    color: #67737f;
+}
+section.product .info-product .text .price h3{
+    border: none;
+    font-size: 41.10px;
+}
+section.product .info-product .footer {
+    width: 100%;
+    margin-bottom: 50px;
+}
+section.product .info-product .footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 28.83px;
+    background-color: var(--azulOtec);
+}
+section.product .info-product span{
+    font-size: 18.78px;
+    float: right;
+}
+section.product .info-product span a{
+    color: #67737f;
+}
